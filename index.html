@@ -3,12 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>Images, Video, Favicons, &amp; Tables</title>
-        <!-- TO DO:add your name to the meta author tag -->
-        <meta name="author" content="">
+        <!-- TO DO (done):add your name to the meta author tag -->
+        <meta name="author" content="Kai Russell">
         <meta name="description" content="Practice with images, video, svgs, favicons, and tables for G.I.T. 215">
 
         <!-- A FAVICON -->
-        <!-- TO DO: add the favicon here -->
+        <!-- TO DO (done): add the favicon here -->
+         <title>Favicon</title>
+        <link rel="icon" href="C:\Users\kaile\OneDrive\Desktop\fonts\favicon.ico" type="image/x-icon>
 
         <!-- GOOGLE FONTS LINKS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,8 +74,8 @@
                     <h3><span>&#10033;&nbsp;</span> Adding Decorative Images to HTML</h3>
                     <p>As explained above, a decorative images is one that if you took it off the page, the user would still be able to use and understand the page fully, because the image isn't adding any information they won't have otherwise. When adding these in your HTML, you indicate that they are decorative by leaving the alt text attribute empty. You can't leave the alt attribute off completely, just blank. Generally though, you'll add decorative images using CSS.</p>
 
-                    <!-- TO DO: add the image named square-red-blue to this section below. Be sure to add its height and width -->
-
+                    <!-- TO DO(done): add the image named square-red-blue to this section below. Be sure to add its height and width -->
+                    <img src="https://images.unsplash.com/photo-1744968776861-4d25c8df9790?q=80&w=763&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="square-red-blue" width="800" height="600">
                     <p class="credit">Photo by <a href="https://unsplash.com/@usgs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">USGS</a> on <a href="https://unsplash.com/wallpapers/cool/abstract?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
                 </section>
 
@@ -81,8 +83,8 @@
                     <h3><span>&#10033;&nbsp;</span> Adding Images as Content is HTML</h3>
                     <p>For images that are content, and necessary for understanding the page (think products, maps, etc.) you cannot leave the alt text blank, and should use it to describe the image to the best of your ability. These should also use width and height attributes that come from the edited image itself.</p>
 
-                    <!-- TO DO: add the memphis recording service to this section below, I used "a neon sign hanging on a dark wall that says memphis recording service" as the alt text for this image it is 400px wide by 400px tall -->
-
+                    <!-- TO DO(done): add the memphis recording service to this section below, I used "a neon sign hanging on a dark wall that says memphis recording service" as the alt text for this image it is 400px wide by 400px tall -->
+                    <img src=" https://images.unsplash.com/photo-1578147232627-c00bf350912c?q=80&w=1052&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="a neon sign hanging on a dark wall that says memphis recording service" width="400" height="400">
                     <p class="credit">Photo by <a href="https://unsplash.com/es/@uconrad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Uwe Conrad</a> on <a href="https://unsplash.com/photos/zPnHgxeu9LI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
                 </section>
             </section>
@@ -95,8 +97,10 @@
                     <h3><span>&#10033;&nbsp;</span> Using HTML5 to Add a Video</h3>
                     <p>The video that we will embed below is included in the video folder of this project. Your zyBook explains how these tags work in detail, but today we'll write some minimum code to get the video to display on our page. Below, we'll add the video from the video folder in the project. Include the attribute that will display controls for the video, and set the width.</p>
                     
-                    <!-- TO DO: Add the video from the files below using HTML5 -->
-
+                    <!-- TO DO (done): Add the video from the files below using HTML5 -->
+                    <video controls>
+                        <source src="https://www.pexels.com/download/video/3134599/">
+                    </video>
                     <a href="https://www.pexels.com/video/laptop-use-as-controller-for-a-modern-sound-system-3134599/" class="credit">Video by Caleb Oquendo</a>
                 </section>
 
@@ -104,10 +108,8 @@
                     <h3><span>&#10033;&nbsp;</span> Adding Video From YouTube</h3>
                     <p>Adding a video from YouTube is as simple as copying and pasting some code. YouTube videos include embed code under the share menu for each video. Once it is open, you can choose to set some options or just copy the code and paste it into your HTML. YouTube uses a tag called an <code>iframe</code> to hold their videos. These can render more than just videos, though, including an entire web page.</p>
                     <!-- This video can be found here: https://www.youtube.com/watch?v=k9DZp16uNQk&list=RDk9DZp16uNQk&start_radio=1 I did remove the autoplay and frameborder attributes from the given code -->
-                    <iframe width="425" height="240" src="https://www.youtube.com/embed/k9DZp16uNQk" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="626" height="361" src="https://www.youtube.com/embed/k9DZp16uNQk?list=RDk9DZp16uNQk" title="Sesame Street: ABC Disco with Grover" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </section>
-            </section>
-
             <section id="favicon">
                 <h2>Adding a Favicon to Your Web Page</h2>
                 <p>A favicon serves a lot of purposes, as you saw in our lecture today. You can find the original png that we will use to create our favicon inside of the images folder. You can easily convert it to a favicon file type on the <a href="https://www.favicon-generator.org/" target="_blank">Favicon Generator website</a>. Be sure to select to only generate the 16x16 favicon with the options below the file upload.</p>
